@@ -1,0 +1,482 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #1C1C1C;
+    --color-de-fondo-menu: #3a9a9a;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: updock;
+    font-weight: bold;
+    
+
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion__foto{
+    
+    display: flex;
+    align-items: flex-end;
+    border-radius: 50%; 
+    margin-right: 1rem;
+
+}
+
+.presentacion {
+    
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.presentacion__contenedor {
+    max-width: 60%;
+}
+.presentacion__titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.presentacion__subtitulo {
+    font-size: 1.2rem;
+    color: #6d6d6d;
+}
+
+.redes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.redes__img a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.redes__img img {
+    margin-left: 0.5rem;
+    width: 16px;
+    height: 16px;
+}
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi__titulo{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e6b8b8;
+}
+
+.sobre-mi__texto {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 1064px;
+    margin: 0 auto; 
+}
+
+.sobre-mi__firma {
+    margin-top: 0.50rem;
+    max-width: 120px; 
+    flex-wrap: wrap; 
+
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e6b8b8;
+}
+
+.habilidades h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e6b8b8;
+}
+
+.habilidades-blandas p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin: 0 auto; 
+}
+
+.habilidades {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.habilidades h2 {
+    font-size: 2rem;
+    color: #e6b8b8;
+    margin-bottom: 20px;
+}
+
+.habilidades-tecnicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; 
+}
+
+.habilidad {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidad img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px; /* Para centrar los íconos */
+}
+
+.habilidad p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.aficiones__titulo {
+    font-size: 2rem;
+    color: #e6b8b8;
+    margin-bottom: 20px;
+}
+
+.aficiones__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px; /* Espacio entre aficiones */
+    padding: 0;
+    list-style-type: none;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; /* Ancho fijo para todas las aficiones */
+}
+
+.aficiones__icono {
+    width: 80px; 
+    height: 80px;
+    object-fit: cover; /* Para ajustar bien las imágenes dentro del tamaño */
+    margin-bottom: 10px; /* Espacio entre icono y texto */
+}
+
+.aficiones__nombre {
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+}
+
+/*------------------------------ Sección de formaciónproyectos__titulo --------------------------------*/
+
+.formacion__titulo{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ac8d8d;
+
+}
+
+.formacion__lista{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-items: center;
+    color: #6d6d6d;
+
+}
+
+
+.proyectos__titulo{
+
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ac8d8d;
+}
+
+.formacion__icono{
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.formacion__nombre{
+
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+}
+
+.formacion__detalle{
+
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.experiencia__profesional{
+    font-size: 1.5rem;
+    color: #295364;
+    text-align:left;
+}
+.proyectos__contenedor{
+
+    font-size: 1rem;
+    color: #5e818f;
+    text-align:justify;
+
+}
+
+
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto__titulo{
+
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ac8d8d;
+}
+
+/* Estilos para el formulario de contacto */
+.contacto {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__formulario label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #3a9a9a;
+}
+
+.contacto__formulario input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+   
+}
+
+.contacto__formulario button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto__formulario button:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contacto__formulario {
+        padding: 10px;
+    }
+
+    .contacto__titulo {
+        font-size: 1.5rem;
+    }
+
+    .contacto__formulario input, .contacto__formulario button {
+        font-size: 1rem;
+    }
+}
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 80px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .estilo-x {
+            font-size: calc(1em + 1vw);
+            line-height: 1em;
+            padding: 1em;
+            margin: 1em;}
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+     
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+        color: antiquewhite;
+        font-weight: bold;
+        text-align: center;
+        font-style: agatha;
+    
+
+
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: antiquewhite;
+
+    }
+}
+
+
+/* Media Queries para ajustar el diseño en dispositivos móviles */
+@media (max-width: 768px) {
+    .contacto__formulario {
+        margin: 10px; /* Reduce el margen en pantallas más pequeñas */
+        padding: 15px; /* Reduce el relleno en pantallas más pequeñas */
+    }
+    
+    .contacto__formulario input, 
+    .contacto__formulario button {
+        width: 100%; /* Los inputs y botones ocuparán el 100% del ancho */
+    }
+    .presentacion__foto {
+        width: 100%; 
+        max-width: 150px; 
+        height: auto; 
+        border-radius: 50%; 
+    
+    }
+    
+    .presentacion__titulo{
+
+        width: 100%; 
+        max-width: 200px; 
+        height: auto; 
+    
+    }
+
+    .presentacion__subtitulo{
+
+        width: 100%; 
+        max-width: 200px; 
+        height: auto; 
+        
+    }
+    .presentacion__contenedor{
+
+        width: 100%; 
+        max-width: 200px; 
+        height: auto; 
+     
+    }
+
+    .redes__img{
+
+        width: 50%; 
+        max-width: 100px; 
+        height: auto; 
+      
+    }
+}
+
